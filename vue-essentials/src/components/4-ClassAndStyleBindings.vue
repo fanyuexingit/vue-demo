@@ -1,33 +1,33 @@
 <script>
-    export default {
-        data() {
-            return {
-                isActive: true,
-                hasError: false,
-                error: null,
-                classObject: {
-                    active: true,
-                    'text-danger': false
-                },
-                activeClass: 'active',
-                errorClass: 'text-danger',
-                activeColor: 'red',
-                fontSize: 30,
-                styleObject: {
-                    color: 'red',
-                    fontSize: '13px'
-                }
+export default {
+    data() {
+        return {
+            isActive: true,
+            hasError: false,
+            error: null,
+            classObject: {
+                active: true,
+                'text-danger': false
+            },
+            activeClass: 'active',
+            errorClass: 'text-danger',
+            activeColor: 'red',
+            fontSize: 30,
+            styleObject: {
+                color: 'red',
+                fontSize: '13px'
             }
-        },
-        computed: {
-            classObject2() {
-                return {
-                active: this.isActive && !this.error,
-                'text-danger': this.error && this.error.type === 'fatal'
-                }
+        }
+    },
+    computed: {
+        classObject2() {
+            return {
+            active: this.isActive && !this.error,
+            'text-danger': this.error && this.error.type === 'fatal'
             }
         }
     }
+}
 </script>
 
 

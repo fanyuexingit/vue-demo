@@ -1,47 +1,47 @@
 <script>
 
-    export default {
-        data() {
-            return {
-                parentMessage: 'Parent',
-                items: [{ message: 'Foo' }, { message: 'Bar' }],
-                myObject: {
-                    title: 'How to do lists in Vue',
-                    author: 'Jane Doe',
-                    publishedAt: '2016-04-10'
+export default {
+    data() {
+        return {
+            parentMessage: 'Parent',
+            items: [{ message: 'Foo' }, { message: 'Bar' }],
+            myObject: {
+                title: 'How to do lists in Vue',
+                author: 'Jane Doe',
+                publishedAt: '2016-04-10'
+            },
+            todos: [
+                {
+                    id: 1,
+                    name: 'fan',
+                    text: 'qwer'
                 },
-                todos: [
-                    {
-                        id: 1,
-                        name: 'fan',
-                        text: 'qwer'
-                    },
-                    {
-                        id: 2,
-                        name: 'yue',
-                        text: 'asdf'   
-                    },
-                    {
-                        id: 3,
-                        name: 'xin',
-                        text: 'zcxv'   
-                    }
-                ],
-                numbers: [1, 2, 3, 4, 5],
-                sets: [[ 1, 2, 3, 4, 5 ], [6, 7, 8, 9, 10]]
-            }
-        },
-        methods: {
-            even(numbers) {
-                return numbers.filter(number => number % 2 === 0)
-            }
-        },
-        computed: {
-            evenNumbers() {
-                return this.numbers.filter(n => n % 2 === 0)
-            }
+                {
+                    id: 2,
+                    name: 'yue',
+                    text: 'asdf'   
+                },
+                {
+                    id: 3,
+                    name: 'xin',
+                    text: 'zcxv'   
+                }
+            ],
+            numbers: [1, 2, 3, 4, 5],
+            sets: [[ 1, 2, 3, 4, 5 ], [6, 7, 8, 9, 10]]
+        }
+    },
+    methods: {
+        even(numbers) {
+            return numbers.filter(number => number % 2 === 0)
+        }
+    },
+    computed: {
+        evenNumbers() {
+            return this.numbers.filter(n => n % 2 === 0)
         }
     }
+}
 </script>
 
 

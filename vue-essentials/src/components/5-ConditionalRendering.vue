@@ -1,14 +1,14 @@
 <script>
 
-    export default {
-        data() {
-            return {
-                awesome: true,
-                type: 'E',
-                ok: true
-            }
+export default {
+    data() {
+        return {
+            awesome: true,
+            type: 'E',
+            ok: true
         }
     }
+}
 
 </script>
 
